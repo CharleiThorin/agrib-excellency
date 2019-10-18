@@ -1,1 +1,1 @@
-web: gunicorn agrib:app
+web: waitress-serve --port=8000 agrib:app
