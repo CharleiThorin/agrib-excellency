@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+{% block page %}
+    {{ super() }}
+    <div class="container-wrap">
+        <aside id="fh5co-hero">
+			<div class="flexslider">
+				<ul class="slides">
+			   	    <li style="background-image: url({{ url_for('static', filename='images/agriwallpaper.jpg') }});">
+			   		    <div class="overlay-gradient"></div>
+			   		    <div class="container-fluids">
+			   			    <div class="row">
+				   			    <div class="col-md-6 col-md-offset-3 slider-text slider-text-bg">
+				   				    <div class="slider-text-inner text-center">
+				   					    <h1 style="color: white">Contact Us</h1>
+										<h2 style="color: white">Brought to you by <a href="http://agrib-excellency.com/" target="_blank">agrib-excellency.com</a></h2>
+				   				    </div>
+				   			    </div>
+				   		    </div>
+			   		    </div>
+			   	    </li>
+			  	</ul>
+		  	</div>
+		</aside>
+		<div id="fh5co-contact">
+			<div class="row animate-box">
+				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+					<h2>Contact us</h2>
+					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 col-md-push-1 animate-box">
+					<h3>Our Address</h3>
+					<ul class="contact-info">
+						<li><i class="icon-location4"></i>Plot 15 Mackinnon Road Nakasero Kampala</li>
+						<li><i class="icon-phone3"></i>+ 12345 6721 98</li>
+						<li><i class="icon-location3"></i><a href="#">info@agrib-excellency.com</a></li>
+						<li><i class="icon-globe2"></i><a href="{{ url_for('main.index') }}">www.agrib-excellency.com</a></li>
+					</ul>
+				</div>
+				<div class="col-md-7 col-md-push-1 animate-box">
+					<div class="row">
+						<form method="post">
+                            {{ form.hidden_tag() }}
+                            <div class="col-md-6">
+							    <div class="form-group">
+                                    {{ form.name(class='form-control', placeholder="Name") }}
+							    </div>
+						    </div>
+						    <div class="col-md-6">
+							    <div class="form-group">
+                                    {{ form.email(class='form-control', placeholder="Email") }}
+							    </div>
+						    </div>
+                             <div class="col-md-12">
+							    <div class="form-group">
+                                    {{ form.phone(class='form-control', placeholder="phone number") }}
+							    </div>
+						    </div>
+						    <div class="col-md-12">
+							    <div class="form-group">
+                                    {{ form.message(class='form-control',cols='30', rows='7', placeholder='Message') }}
+							    </div>
+						    </div>
+						    <div class="col-md-12">
+							    <div class="form-group">
+                                    {{ form.submit(class='btn btn-primary btn-modify') }}
+							    </div>
+						    </div>
+                        </form>
+					</div>
+                    <div class="row">
+                        {% for message in get_flashed_messages() %}
+                            <div class="alert alert-warning">
+                                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                    {{ message }}
+                            </div>
+                        {% endfor %}
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div><!-- END container-wrap -->
+{% endblock %}

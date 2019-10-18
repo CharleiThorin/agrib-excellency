@@ -1,0 +1,6 @@
+New Subscriber
+
+Name: {{ name }},
+Email:{{ email }},
+Phone Number:{{ phone }},
+Message:{{ message }}

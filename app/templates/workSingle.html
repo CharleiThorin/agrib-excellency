@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block page %}
+    {{ super() }}
+    <div class="container-wrap">
+		<aside id="fh5co-hero">
+			<div class="flexslider">
+				<ul class="slides">
+			   	<li style="background-image: url({{ url_for('static', filename='images/img_bg_3.jpg') }});">
+			   		<div class="overlay-gradient"></div>
+		   			<div class="row">
+			   			<div class="col-md-6 col-md-offset-3 slider-text slider-text-bg">
+			   				<div class="slider-text-inner text-center">
+			   					<h1>Work</h1>
+									<h2>Brought to you by by <a href="{{ url_for('main.index') }}" target="_blank">agrib-excellency.com</a></h2>
+			   				</div>
+			   			</div>
+			   		</div>
+			   	</li>
+			  	</ul>
+		  	</div>
+		</aside>
+		<div id="fh5co-work">
+			<div class="row">
+				<div class="col-md-8">
+					<a href="{{ url_for('static', filename='images/portfolio-1.jpg') }}" class="image-popup img-portfolio-detail">
+						<img src="{{ url_for('static', filename='images/portfolio-1.jpg') }}" alt="agrib-excellency.com" class="img-responsive">
+					</a>
+				</div>
+				<div class="col-md-4 fh5co-project-detail">
+					<h2 class="fh5co-project-title">Project Title</h2>
+					<span class="fh5co-project-sub">Package of the year</span>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet ullam ab perferendis aut
+						repellat maxime reiciendis doloremque atque ipsa nostrum et at nihil quae placeat eum corporis
+						laboriosam culpa, consequuntur aperiam praesentium rem totam fuga deleniti laborum! Possimus, hic, itaque?
+					</p>
+
+					<div class="fh5co-project-service">
+						<h3>Services</h3>
+						<ul>
+							<li>Package Design</li>
+							<li>Printing</li>
+							<li>Branding</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center animate-box">
+					<div class="about-desc">
+						<h3>Hi! We are Agrib Excellency</h3>
+						<p>I am a French Designer. Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit.
+                            Eos cumque dicta adipisci architecto culpa amet. Dignissimos asperiores vitae velit veniam
+                            totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.
+
+                        </p>
+						<p>
+						<ul class="fh5co-social-icons">
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-linkedin"></i></a></li>
+							<li><a href="#"><i class="icon-dribbble"></i></a></li>
+						</ul>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- END container-wrap -->
+{% endblock %}
+
+
