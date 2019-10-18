@@ -1,1 +1,1 @@
-web: waitress-serve --port=8000 agrib:app
+web: gunicorn flasky:app
