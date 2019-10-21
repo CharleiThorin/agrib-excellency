@@ -65,17 +65,20 @@
 							            <li class="has-dropdown">
 								            <a href="{{ url_for('main.work') }}">Services</a>
 								            <ul class="dropdown">
-									            <li><a href="#">Agric Financing</a></li>
-									            <li><a href="#">Grant MGT</a></li>
+                                                <li><a href="#">Exposure Study Trips</a></li>
+									            <li><a href="#">Fund Management</a></li>
+									            <li><a href="#">Project Management</a></li>
+									            <li><a href="#">Agriculture Financing</a></li>
+									            <li><a href="#">Grant Management</a></li>
 									            <li><a href="#">Financial Analysis</a></li>
 									            <li><a href="#">Credit Analysis</a></li>
                                                 <li><a href="#">Loan Schemes</a></li>
                                                 <li><a href="#">FinancialInclusion</a></li>
 								            </ul>
 							            </li>
-                                         <li><a href="{{ url_for('main.about') }}">About</a></li>
+                                         <li><a href="{{ url_for('main.about') }}">About Us</a></li>
 							            <li><a href="{{ url_for('main.contact') }}">Contact</a></li>
-                                        <li><a href="{{ url_for('main.blog') }}">Blog</a></li>
+{#                                        <li><a href="{{ url_for('main.blog') }}">Blog</a></li>#}
 						            </ul>
 					            </div>
 				            </div>
@@ -94,8 +97,9 @@
 			        <div class="row">
 				        <div class="col-md-3 fh5co-widget">
 					        <h4>About Agrib-excellence</h4>
-					        <p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque
-                                dicta adipisci architecto culpa amet.
+					        <p>is a registered company based in Uganda and operating both nationally and internationally.
+                                We are committed to agricultural development, financing and exposure to new technologies
+                                and innovations.
                             </p>
 				        </div>
 				        <div class="col-md-3 col-md-push-1">
@@ -104,19 +108,19 @@
 						        <li><a href="#">Amazing Trips</a></li>
 						        <li><a href="#">Know about every Conference</a></li>
 						        <li><a href="#">We are now available</a></li>
-						        <li><a href="about.html">100+ projects</a></li>
-						        <li><a href="contact.html">Join Us here</a></li>
+						        <li><a href="{{ url_for('main.about') }}">100+ projects</a></li>
+						        <li><a href="{{ url_for('main.contact') }}">Join Us here</a></li>
 					        </ul>
 				        </div>
 
 				        <div class="col-md-3 col-md-push-1">
 					        <h4>Links</h4>
 					        <ul class="fh5co-footer-links">
-						        <li><a href="index.html">Home</a></li>
-						        <li><a href="work.html">Work</a></li>
-						        <li><a href="work.html">Services</a></li>
-						        <li><a href="blog.html">Blog</a></li>
-						        <li><a href="about.html">About us</a></li>
+						        <li><a href="{{ url_for('main.index') }}">Home</a></li>
+						        <li><a href="{{ url_for('main.work') }}">Work</a></li>
+						        <li><a href="{{ url_for('main.work') }}">Services</a></li>
+{#						        <li><a href="{{ url_for('main.blog') }}">Blog</a></li>#}
+						        <li><a href="{{ url_for('main.contact') }}">Contact</a></li>
 					        </ul>
 				        </div>
 
@@ -124,8 +128,8 @@
 					        <h4>Contact Information</h4>
 					        <ul class="fh5co-footer-links">
 						        <li>plot 15 Mackinnon Road, <br> Nakasero, Kampala</li>
-						        <li><a href="tel://1234567890">+ 12345 567 98</a></li>
-						        <li><a href="mailto:info@agrib-excellency.com">info@agrib-excellency.com</a></li>
+						        <li><a href="tel://+256778996246">+256 778 996-246</a></li>
+						        <li><a href="mailto:info@agrib-excellency.com">infor@agrib-excellency.com</a></li>
 					        </ul>
 				        </div>
                     </div>

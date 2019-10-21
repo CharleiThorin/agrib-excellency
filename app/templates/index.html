@@ -12,10 +12,10 @@
 			   		<div class="overlay-gradient"></div>
 			   		<div class="container-fluid">
 			   			<div class="row">
-				   			<div class="col-md-6 col-md-offset-3 col-md-pull-3 slider-text">
+				   			<div class="col-md-7 col-md-offset-3 col-md-pull-3 slider-text">
 				   				<div class="slider-text-inner">
-                                    <h1><b>Not Every Project Needs To Be Perfect</b></h1>
-                                    <h2>Visit other agricultural nations to learn more<a href="{{ url_for('main.index') }}" target="_blank">agrib-excellency.com</a></h2>
+                                    <h1 ><b>“Promoting Agribusiness Excellency through Exposure Trips"</b></h1>
+                                    <h2 style="background-color: #C7C7C7"><b>Visit other agricultural nations at  <a style="color: #8B008B; background-color: #C7C7C7" href="{{ url_for('main.index') }}" target="_blank">  www.agrib-excellency.com</a></b></h2>
                                     <p><a class="btn btn-primary btn-demo" href="{{ url_for('main.contact') }}"></i> Register</a> <a class="btn btn-primary btn-learn">Learn More</a></p>
 				   				</div>
 				   			</div>
@@ -28,8 +28,8 @@
 			   			<div class="row">
 				   			<div class="col-md-6 col-md-offset-3 col-md-push-3 slider-text">
 				   				<div class="slider-text-inner">
-				   					<h1>We journey with you step by step into financial success</h1>
-                                    <h2>Brought to you by: <a href="http://agrib-excellency.com/" target="_blank">agrib-excellency.com</a></h2>
+                                    <h1><b>We journey with you step by step into financial success</b></h1>
+                                    <h2 ><b>Through <a style="color: #8B008B;" href="http://agrib-excellency.com/" target="_blank">Financial Analysis and Management:</a></b></h2>
                                     <p><a class="btn btn-primary btn-demo" href="{{ url_for('main.about') }}"></i> Find Info</a> <a class="btn btn-primary btn-learn">Learn More</a></p>
 				   				</div>
 				   			</div>
@@ -43,7 +43,7 @@
 								<div class="col-md-6 col-md-offset-3 col-md-push-3 slider-text">
 									<div class="slider-text-inner">
                                         <h1><b>Journeys For People Who Tell Stories</b></h1>
-										<h2>Visit the fields of Singapore <a href="http://agrib-excellency.com/" target="_blank">agrib-excellency.com</a></h2>
+                                        <h2><b>We help projects acquire <a style="color: #8B008B; background-color: #A6AA58" href="http://agrib-excellency.com/" target="_blank">Funding and Grants</a></b></h2>
 										<p><a class="btn btn-primary btn-demo" href="{{ url_for('main.contact') }}"></i> Register</a> <a class="btn btn-primary btn-learn">Learn More</a></p>
 									</div>
 								</div>
@@ -56,8 +56,8 @@
 			   			<div class="row">
 				   			<div class="col-md-6 col-md-offset-3 slider-text">
 				   				<div class="slider-text-inner text-center">
-				   					<h1>What Would You Like To Learn?</h1>
-                                    <h2>Visit the fields of Singapore <a href="http://agrib-excellency.com/" target="_blank">agrib-excellency.com</a></h2>
+                                    <h1><b>Platform For Understanding Agricultural Benefits</b></h1>
+                                    <h2><b>understand services such as: <a style="color: #8B008B; background-color: #BC8125" href="http://agrib-excellency.com/" target="_blank">Financial Inclusion</a></b></h2>
                                     <p><a class="btn btn-primary btn-demo" href="{{ url_for('main.contact') }}"></i> Register</a> <a class="btn btn-primary btn-learn">Learn More</a></p>
 				   				</div>
 				   			</div>
@@ -70,8 +70,8 @@
 			   			<div class="row">
 				   			<div class="col-md-6 col-md-offset-3 col-md-push-3 slider-text">
 				   				<div class="slider-text-inner">
-				   					<h1>I Love to Tell My Story</h1>
-                                    <h2>Brought to you by <a style="color: crimson" href="http://agrib-excellency.com/" target="_blank">agrib-excellency.com</a></h2>
+                                    <h1><b>We transform Complex Projects into success stories</b></h1>
+                                    <h2 ><b style="background-color: #C7C7C7"> We <a  style="color: #8B008B;" href="http://agrib-excellency.com/" target="_blank">manage Projects </a>and facilitate them to completion</b></h2>
                                     <p><a class="btn btn-primary btn-demo" href="#"></i> View Infor</a> <a class="btn btn-primary btn-learn">Learn More</a></p>
 				   				</div>
 				   			</div>
@@ -93,7 +93,7 @@
                                 is a registered company based in Uganda and operating both nationally and internationally.
                                 We are committed to agricultural development, financing and exposure to new technologies and innovations.
                             </p>
-                            <p><a href="#" class="btn btn-primary btn-outline">Our History</a></p>
+                            <p><a href="{{ url_for('main.about') }}" class="btn btn-primary btn-outline">More Details</a></p>
                         </div>
                     </div>
                 </div>
@@ -112,9 +112,9 @@
                             <div class="desc">
                                 <span></span>
                                 <h3>Argentina</h3>
-                                <span>3 nights + Flight 5*Hotel</span>
+                                <span>Mega Agribusiness Expo</span>
                                 <!--<span class="price">$1,000</span>-->
-                                <a class="btn btn-primary btn-outline" href="#">Schedule Trip <i class="icon-arrow-right22"></i></a>
+                                <a class="btn btn-primary btn-outline" href="{{ url_for('main.argentina_expo') }}">Schedule Trip <i class="icon-arrow-right22"></i></a>
                             </div>
                         </div>
                     </div>
@@ -122,10 +122,10 @@
                         <div href="#"><img src="{{ url_for('static', filename='images/pineappleFields.jpg') }}" alt="" class="img-responsive">
                             <div class="desc">
                                 <span></span>
-                                <h3>Philippines</h3>
-                                <span>4 nights + Flight 5*Hotel</span>
+                                <h3>Announcing soon</h3>
+                                <span>Coming Soon</span>
                                 <!--<span class="price">$1,000</span>-->
-                                <a class="btn btn-primary btn-outline" href="#">Schedule Trip <i class="icon-arrow-right22"></i></a>
+                                <a class="btn btn-primary btn-outline" >Announcing Soon <i class="icon-arrow-right22"></i></a>
                             </div>
                         </div>
                     </div>
@@ -133,15 +133,15 @@
                         <div href="#"><img src="{{ url_for('static', filename='images/lavenderFields.jpg') }}" alt="" class="img-responsive">
                             <div class="desc">
                                 <span></span>
-                                <h3>Hongkong</h3>
-                                <span>2 nights + Flight 4*Hotel</span>
+                                <h3>Announcing soon</h3>
+                                <span>Coming Soon</span>
                                 <!--<span class="price">$1,000</span>-->
-                                <a class="btn btn-primary btn-outline" href="#">Schedule Trip <i class="icon-arrow-right22"></i></a>
+                                <a class="btn btn-primary btn-outline" >Announcing Soon <i class="icon-arrow-right22"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-12 text-center animate-box">
-                        <p><a class="btn btn-primary btn-outline btn-lg" href="#">See All Offers <i class="icon-arrow-right22"></i></a></p>
+                        <p><a class="btn btn-primary btn-outline btn-lg" >All Trips to be displayed soon <i class="icon-arrow-right22"></i></a></p>
                     </div>
                 </div>
         </div>
@@ -160,9 +160,9 @@
 							<i class="icon-search"></i>
 						</span>
 						<div class="desc">
-							<h3><a href="#">AGRICULTURE EXPOSURE STUDY TRIPS</a></h3>
+							<h3><a href="{{ url_for('main.work_single') }}">AGRICULTURE EXPOSURE STUDY TRIPS</a></h3>
 							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-                            <p><a href="#">Learn More</a></p>
+                            <p><a href="{{ url_for('main.work_single') }}">Learn More</a></p>
 						</div>
 					</div>
 				</div>
@@ -172,9 +172,9 @@
 							<i class="icon-wallet"></i>
 						</span>
                         <div class="desc">
-                            <h3><a href="#">FUND MANAGEMENT</a></h3>
+                            <h3><a href="{{ url_for('main.work_single') }}">FUND MANAGEMENT</a></h3>
                             <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-                            <p><a href="#">Learn More</a></p>
+                            <p><a href="{{ url_for('main.work_single') }}">Learn More</a></p>
                         </div>
                     </div>
                 </div>
@@ -184,9 +184,9 @@
 							<i class="icon-hotairballoon"></i>
 						</span>
 						<div class="desc">
-							<h3><a href="#">PROJECT MANAGEMENT</a></h3>
+							<h3><a href="{{ url_for('main.work_single') }}">PROJECT MANAGEMENT</a></h3>
 							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-                            <p><a href="#">Learn More</a></p>
+                            <p><a href="{{ url_for('main.work_single') }}">Learn More</a></p>
 						</div>
 					</div>
 				</div>

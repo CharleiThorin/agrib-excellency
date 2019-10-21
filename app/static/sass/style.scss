@@ -1108,7 +1108,7 @@ h1, h2, h3, h4, h5, h6, figure {
         }
       }
       h3 {
-        color: $brand-white;
+        color: $brand-black;
       }
     }
     > li{
@@ -1799,7 +1799,7 @@ input[type="text"] {
 }
 .fh5co-project-detail {
 	.fh5co-project-title {
-		font-size: 20px;
+		font-size: 15px;
 		margin-bottom: 5px;
 	}
 	.fh5co-project-sub {
@@ -1813,13 +1813,13 @@ input[type="text"] {
 			font-size: 18px;
 			margin-bottom: 5px;
 		}
-		ul {
+		ol {
 			li, & {
 				padding: 0;
 				margin: 0;
 			}
 			li {
-				color: ligthen($brand-black, 70%);
+				color: ligthen($brand-black, 60%);
 				list-style: none;
 				color: rgba(0, 0, 0, .3);
 				font-weight: 400;

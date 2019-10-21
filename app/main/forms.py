@@ -10,3 +10,12 @@ class ContactForm(FlaskForm):
     phone = TelField('phone', validators=[InputRequired()])
     message = TextAreaField('Message', validators=[InputRequired()])
     submit = SubmitField('Send Message')
+
+
+class RegistrationForm(FlaskForm):
+    first_name = StringField('Name', validators=[InputRequired()])
+    last_name = StringField('Name', validators=[InputRequired()])
+    email = StringField('Email', validators=[InputRequired(), Length(1, 64), Email()])
+    phone = TelField('phone', validators=[InputRequired()])
+    message = TextAreaField('Message', validators=[InputRequired()])
+    submit = SubmitField('Submit Form')

@@ -894,7 +894,7 @@ h1, h2, h3, h4, h5, h6, figure {
           float: left;
           margin-bottom: 0; } }
     #fh5co-timeline .timeline .timeline-heading h3 {
-      color: #fff; }
+      color: #000; }
     #fh5co-timeline .timeline > li {
       margin-bottom: 20px;
       position: relative; }
@@ -1488,7 +1488,7 @@ input[type="text"] {
   float: left; }
 
 .fh5co-project-detail .fh5co-project-title {
-  font-size: 20px;
+  font-size: 15px;
   margin-bottom: 5px; }
 .fh5co-project-detail .fh5co-project-sub {
   color: rgba(0, 0, 0, 0.3);
@@ -1498,11 +1498,11 @@ input[type="text"] {
 .fh5co-project-detail .fh5co-project-service h3 {
   font-size: 18px;
   margin-bottom: 5px; }
-.fh5co-project-detail .fh5co-project-service ul li, .fh5co-project-detail .fh5co-project-service ul {
+.fh5co-project-detail .fh5co-project-service ol li, .fh5co-project-detail .fh5co-project-service ol {
   padding: 0;
   margin: 0; }
-.fh5co-project-detail .fh5co-project-service ul li {
-  color: ligthen(#000, 70%);
+.fh5co-project-detail .fh5co-project-service ol li {
+  color: ligthen(#000, 60%);
   list-style: none;
   color: rgba(0, 0, 0, 0.3);
   font-weight: 400; }

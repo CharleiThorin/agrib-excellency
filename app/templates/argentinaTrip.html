@@ -1,0 +1,145 @@
+{% extends "base.html" %}
+
+{% block page %}
+    {{ super() }}
+    <div class="container-wrap">
+		<aside id="fh5co-hero">
+			<div class="flexslider">
+				<ul class="slides">
+			   	<li style="background-image: url({{ url_for('static', filename='images/argExpo.jpg') }});">
+			   		<div class="overlay-gradient"></div>
+		   			<div class="row">
+			   			<div class="col-md-6 col-md-offset-3 slider-text slider-text-bg">
+			   				<div class="slider-text-inner text-center">
+                                <h1><b>Argentina Expo</b></h1>
+                                <h2 ><b style="background-color: #9BA5AF">Brought to you by Aapresid <a style="color: #8B008B" href="http://www.aapresid.org.ar/" target="_blank"> www.aapresid.org.ar</a></b></h2>
+			   				</div>
+			   			</div>
+			   		</div>
+			   	</li>
+			  	</ul>
+		  	</div>
+		</aside>
+		<div id="fh5co-work">
+            <div class="row">
+                {% for message in get_flashed_messages() %}
+                    <div class="alert alert-warning">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                            {{ message }}
+                    </div>
+                {% endfor %}
+            </div>
+			<div class="row">
+				<div class="col-md-8">
+					<a href="{{ url_for('static', filename='images/congress.jpg') }}" class="image-popup img-portfolio-detail">
+						<img src="{{ url_for('static', filename='images/congress.jpg') }}" alt="agrib-excellency.com" class="img-responsive">
+					</a>
+				</div>
+				<div class="col-md-4 fh5co-project-detail">
+					<h2 class="fh5co-project-title">Agricultural Study Trip</h2>
+					<span class="fh5co-project-sub">Package of the year</span>
+					<p>The Argentine Association of Producers in Direct Sowing (Aapresid), in collaboration with
+                        AGRIB Excellency Limited have organised an agricultural study trip entitled;
+                        <b style="color: #00b050">“Promoting Agribusiness Excellency through an Exposure Trip to Argentina”</b>
+					</p>
+
+					<div class="fh5co-project-service">
+						<h3>Industry visits:</h3>
+						<ul>
+							<li>Grain Transportation and Logistics,</li>
+							<li>Plant Breeding and Crop productivity Solutions including drought tolerant breeds,</li>
+							<li>The Association of Argentine Cooperatives</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center animate-box">
+					<div class="about-desc">
+                        <h3 class="text-left">Course Summary</h3>
+						<p class="text-left" style="color: #000; font-size: 15px">
+                            This course will provide you with a practical and thorough exposure in innovative and
+                            productive agricultural practices. The participants will get a chance to attend the
+                            Annual Mega Agribusiness Expo (EXPOAGRO) where the latest innovations in
+                            technologies are demonstrated and information about the sustainable production
+                            systems used by the Argentine farmers will be availed.
+                            Through this course, the challenges in agricultural production financing are examined
+                            coupled with solutions that have been applied successfully in Argentina. Meeting with
+                            the Association of Cooperatives in Argentina will give you a great exposure to
+                            cooperative management.
+                            Dairy farming integrated to agriculture and the mixed system with a focus on areas of
+                            agricultural aptitude and other livestock will be discussed. The role of contract
+                            farming and certification in agriculture will be explored to enhance agricultural
+                            systems in your country. Finally the best combination of cultural, biological and
+                            chemical measures to manage diseases, insects, weeds and other pests.
+                        </p>
+                        <h3 class="text-left"><i>Course Fee</i></h3>
+                        <p class="text-left" style="color: #444; font-size: 15px"><b>The course fee is <i style="color: #8b018b">$3550</i></b></p>
+                        <ol class="text-left" style="color: #000; font-size: 14px">
+                            <b>
+                                <li>Course materials</li>
+                                <li>11 nights full board accommodation in Buenos Aires, Rosario, Villa María and Córdoba Cities</li>
+                                <li>Visit to Expoagro:</li>
+                            </b>
+						</ol>
+                        <p class="text-left" style="color: #000; font-size: 15px">
+                            Expoagro is the most important open-air agroindustrial exhibition in Argentina.
+                            It is held once a year, for four days, at the end of the summer crops campaign.
+                            Thousands of visitors from Argentina and the world participate in this mega
+                            agribusiness meeting, where the latest technology in agricultural machinery is
+                            demonstrated in real conditions for contractors, producers and visitors in
+                            general. In addition, Expoagro displays the latest technologies in seeds, phytosanitary,
+                            livestock and services for the sector. It is a meeting where all the players in the
+                            agribusiness world can update and analyze the most important issues of the
+                            agribusiness agenda, with a profesional business environment.
+                        </p>
+                        <div class="fh5co-project-service text-left" style="color: #000">
+                            <h3>Industry visits:</h3>
+						    <ul>
+							    <li>Grain Transportation and Logistics,</li>
+							    <li>Plant Breeding and Crop productivity Solutions including drought tolerant breeds,</li>
+							    <li>The Association of Argentine Cooperatives</li>
+						    </ul>
+
+						    <h3>Field Visits:</h3>
+						    <ul>
+							    <li>Dairy farming (Integrated Cattle management)</li>
+							    <li>Mixed System Agriculture</li>
+							    <li>Contract Farming</li>
+						    </ul>
+					    </div>
+                        <p>Download full pdf here:
+                            <a href="{{ url_for('static', filename='images/ArgentineAssociation.pdf') }}" download="Argentine Association">
+                                <img style="width: 25px; height: 25px" src="{{ url_for('static', filename='images/pdfIcon.png') }}" alt="Argentine Association">
+                            </a>
+                        </p>
+                        <div class="row">
+                            <div class="col-md-12 text-center animate-box">
+                                <p><a class="btn btn-primary btn-outline btn-lg" href="{{ url_for('main.register') }}">Register Right Now <i class="icon-arrow-right22"></i></a></p>
+                            </div>
+                        </div>
+                         <h3>Hi! We are Agrib Excellency</h3>
+                         <div class="row">
+                            {% for message in get_flashed_messages() %}
+                                <div class="alert alert-warning">
+                                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                                        {{ message }}
+                                 </div>
+                            {% endfor %}
+                         </div>
+						<p>
+						    <ul class="fh5co-social-icons">
+							    <li><a href="#"><i class="icon-twitter"></i></a></li>
+							    <li><a href="#"><i class="icon-facebook"></i></a></li>
+							    <li><a href="#"><i class="icon-linkedin"></i></a></li>
+							    <li><a href="#"><i class="icon-dribbble"></i></a></li>
+						    </ul>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- END container-wrap -->
+{% endblock %}
+
+

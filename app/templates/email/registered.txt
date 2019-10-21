@@ -1,0 +1,9 @@
+Urgent! New Trip Subscriber
+
+This user wants to go on the trip
+
+First Name: {{ first_name }},
+Last Name: {{ last_name }},
+Email:{{ email }},
+Phone Number:{{ phone }},
+Message:{{ message }}

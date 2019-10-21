@@ -1,6 +1,6 @@
 from . import main
 from flask import render_template, session, redirect, flash, url_for
-from .forms import ContactForm
+from .forms import ContactForm, RegistrationForm
 from ..email import send_email
 
 
@@ -42,3 +42,25 @@ def work():
 @main.route('/work-single', methods=['GET'])
 def work_single():
     return render_template('workSingle.html')
+
+
+@main.route('/argentina-expo', methods=['GET'])
+def argentina_expo():
+    return render_template('argentinaTrip.html')
+
+
+@main.route('/register', methods=['GET', 'POST'])
+def register():
+    form = RegistrationForm()
+    if form.validate_on_submit():
+        session['first_name'] = form.first_name.data
+        session['last_name'] = form.last_name.data
+        session['email'] = form.email.data
+        session['phone'] = form.phone.data
+        session['message'] = form.message.data
+        send_email('infor@agrib-excellency.com', 'New Subscriber', 'email/registered',
+                   first_name=session.get('first_name'), last_name=session.get('last_name'),
+                   email=session.get('email'), phone=session.get('phone'), message=session.get('message'))
+        flash('You have successfully Registered',)
+        return redirect(url_for('main.argentina_expo'))
+    return render_template('register.html', form=form)
