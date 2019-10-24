@@ -28,7 +28,7 @@
 			   			<div class="row">
 				   			<div class="col-md-6 col-md-offset-3 col-md-push-3 slider-text">
 				   				<div class="slider-text-inner">
-                                    <h1><b>We journey with you step by step into financial success</b></h1>
+                                    <h1><b>We Assess and project the financial performance of an entity</b></h1>
                                     <h2 ><b>Through <a style="color: #8B008B;" href="http://agrib-excellency.com/" target="_blank">Financial Analysis and Management:</a></b></h2>
                                     <p><a class="btn btn-primary btn-demo" href="{{ url_for('main.about') }}"></i> Find Info</a> <a class="btn btn-primary btn-learn">Learn More</a></p>
 				   				</div>
@@ -42,7 +42,7 @@
 							<div class="row">
 								<div class="col-md-6 col-md-offset-3 col-md-push-3 slider-text">
 									<div class="slider-text-inner">
-                                        <h1><b>Journeys For People Who Tell Stories</b></h1>
+                                        <h1><b>Enabling agribusinesses to access suitable financing instruments to grow their businesses</b></h1>
                                         <h2><b>We help projects acquire <a style="color: #8B008B; background-color: #A6AA58" href="http://agrib-excellency.com/" target="_blank">Funding and Grants</a></b></h2>
 										<p><a class="btn btn-primary btn-demo" href="{{ url_for('main.contact') }}"></i> Register</a> <a class="btn btn-primary btn-learn">Learn More</a></p>
 									</div>
@@ -56,8 +56,8 @@
 			   			<div class="row">
 				   			<div class="col-md-6 col-md-offset-3 slider-text">
 				   				<div class="slider-text-inner text-center">
-                                    <h1><b>Platform For Understanding Agricultural Benefits</b></h1>
-                                    <h2><b>understand services such as: <a style="color: #8B008B; background-color: #BC8125" href="http://agrib-excellency.com/" target="_blank">Financial Inclusion</a></b></h2>
+                                    <h1><b>Access to useful and affordable financial products and Benefits</b></h1>
+                                    <h2><b>understand the benefits of : <a style="color: #8B008B; background-color: #BC8125" href="http://agrib-excellency.com/" target="_blank">Financial Inclusion</a></b></h2>
                                     <p><a class="btn btn-primary btn-demo" href="{{ url_for('main.contact') }}"></i> Register</a> <a class="btn btn-primary btn-learn">Learn More</a></p>
 				   				</div>
 				   			</div>
@@ -70,7 +70,7 @@
 			   			<div class="row">
 				   			<div class="col-md-6 col-md-offset-3 col-md-push-3 slider-text">
 				   				<div class="slider-text-inner">
-                                    <h1><b>We transform Complex Projects into success stories</b></h1>
+                                    <h1><b>Achieving project goals within the resource envelop available.</b></h1>
                                     <h2 ><b style="background-color: #C7C7C7"> We <a  style="color: #8B008B;" href="http://agrib-excellency.com/" target="_blank">manage Projects </a>and facilitate them to completion</b></h2>
                                     <p><a class="btn btn-primary btn-demo" href="#"></i> View Infor</a> <a class="btn btn-primary btn-learn">Learn More</a></p>
 				   				</div>
@@ -173,7 +173,8 @@
 						</span>
                         <div class="desc">
                             <h3><a href="{{ url_for('main.work_single') }}">FUND MANAGEMENT</a></h3>
-                            <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+                            <p style="color: #0b0b0b">We oversee and manage the institution’s cash flows to ensure sufficient liquidity at any
+                                point in time to run the institution and to invest any likely idle funds at a profit margin.
                             <p><a href="{{ url_for('main.work_single') }}">Learn More</a></p>
                         </div>
                     </div>
@@ -184,8 +185,9 @@
 							<i class="icon-hotairballoon"></i>
 						</span>
 						<div class="desc">
-							<h3><a href="{{ url_for('main.work_single') }}">PROJECT MANAGEMENT</a></h3>
-							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+							<h3><a href="#">PROJECT MANAGEMENT</a></h3>
+							<p style="color: #0b0b0b">Support organizations with initiating, planning, executing and monitoring performance of
+                                the organizations’ activities to achieve their set goals within the set timeframe.
                             <p><a href="{{ url_for('main.work_single') }}">Learn More</a></p>
 						</div>
 					</div>
@@ -205,7 +207,11 @@
 					<a href="{{ url_for('main.work_single') }}" class="work"  style="background-image: url({{ url_for('static', filename='images/agriculturalFinancing.jpg') }});">
 						<div class="desc">
                             <h3><b>AGRICULTURAL FINANCING</b></h3>
-							<span>Illustration</span>
+							<span style="color: #0b0b0b; font-size: 15px">
+                                Provision of multiple types of financing services dedicated to supporting farming
+                                agricultural activities and businesses along the value chains. Financial instruments
+                                could vary from short, medium to long term loans and others such as guarantees.
+                            </span>
 						</div>
                         <!--<h5><b>AGRICULTURAL FINANCING</b></h5>-->
 					</a>
@@ -215,7 +221,10 @@
 					<a href="{{ url_for('main.work_single') }}" class="work" style="background-image: url({{ url_for('static', filename='images/grantMGT.jpg') }});">
 						<div class="desc">
                             <h3><b>GRANT MANAGEMENT</b></h3>
-							<span>Brading</span>
+							<span style="color: #0b0b0b; font-size: 15px">
+                                Ensuring regulatory compliance, best practices, ownership of roles and responsibilities
+                                and close out for successful grant results.
+                            </span>
 						</div>
 					</a>
                     <h5><b>GRANT MANAGEMENT</b></h5>
@@ -224,7 +233,10 @@
 					<a href="{{ url_for('main.work_single') }}" class="work" style="background-image: url({{ url_for('static', filename='images/stockMakt.jpg') }});">
 						<div class="desc">
                             <h5><b>FINANCIAL ANALYSIS & MGT</b></h5>
-							<span>Illustration</span>
+							<span style="color: #0b0b0b; font-size: 15px">
+                                Use of financial tools to assess the financial performance of an organization by focusing
+                                on key areas such as profitability, leverage, liquidity and efficiency.
+                            </span>
 						</div>
 					</a>
                     <h5><b>FINANCIAL ANALYSIS & MGT</b></h5>
@@ -235,7 +247,10 @@
                     <a href="{{ url_for('main.work_single') }}" class="work"  style="background-image: url({{ url_for('static', filename='images/creditAnalysis.jpg') }});">
                         <div class="desc">
                             <h3><b>CREDIT ANALYSIS & MGT</b></h3>
-                            <span>Illustration</span>
+                            <span style="color: #0b0b0b; font-size: 15px">
+                                Reviewing the C’s of an individual to assess suitability to borrowing and the quality of
+                                portfolio of the entity in relation to the industry standards to ensure proper credit management.
+                            </span>
                         </div>
                     </a>
                     <h5><b>CREDIT ANALYSIS & MGT</b></h5>
@@ -253,7 +268,10 @@
                     <a href="{{ url_for('main.work_single') }}" class="work" style="background-image: url({{ url_for('static', filename='images/financialInclusion.jpg') }});">
                         <div class="desc">
                             <h3><b>FINANCIAL INCLUSION</b></h3>
-                            <span>Illustration</span>
+                            <span style="color: #0b0b0b; font-size: 15px">
+                                We pride in contributing to ensure that even the most vulnerable such as the women
+                                and the youth can save, access credit and insurance in the most affordable ways.
+                            </span>
                         </div>
                     </a>
                     <h5><b>FINANCIAL INCLUSION</b></h5>
@@ -264,7 +282,8 @@
 		<div id="fh5co-counter" class="fh5co-counters">
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3 text-center animate-box">
-					<p>We have a fun facts far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+					<p>We have a fun facts far far away, behind the word mountains, far from the countries Vokalia and
+                        Consonantia, there live the blind texts.</p>
 					</div>
 			</div>
 			<div class="row animate-box">
