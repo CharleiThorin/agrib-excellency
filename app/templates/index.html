@@ -8,79 +8,80 @@
 		<aside id="fh5co-hero">
 			<div class="flexslider">
 				<ul class="slides">
-			   	<li style="background-image: url({{ url_for('static', filename='images/firstwall.jpg') }});">
-			   		<div class="overlay-gradient"></div>
-			   		<div class="container-fluid">
-			   			<div class="row">
-				   			<div class="col-md-7 col-md-offset-3 col-md-pull-3 slider-text">
-				   				<div class="slider-text-inner">
-                                    <h1 ><b>“Promoting Agribusiness Excellency through Exposure Trips"</b></h1>
-                                    <h2 style="background-color: #C7C7C7"><b>Visit other agricultural nations at  <a style="color: #8B008B; background-color: #C7C7C7" href="{{ url_for('main.index') }}" target="_blank">  www.agrib-excellency.com</a></b></h2>
-                                    <p><a class="btn btn-primary btn-demo" href="{{ url_for('main.contact') }}"></i> Register</a> <a class="btn btn-primary btn-learn">Learn More</a></p>
-				   				</div>
-				   			</div>
-				   		</div>
-			   		</div>
-			   	</li>
-			   	<li style="background-image: url({{ url_for('static', filename='images/chicks.jpg') }});">
-			   		<div class="overlay-gradient"></div>
-			   		<div class="container-fluid">
-			   			<div class="row">
-				   			<div class="col-md-6 col-md-offset-3 col-md-push-3 slider-text">
-				   				<div class="slider-text-inner">
-                                    <h1><b>We Assess and project the financial performance of an entity</b></h1>
-                                    <h2 ><b>Through <a style="color: #8B008B;" href="http://agrib-excellency.com/" target="_blank">Financial Analysis and Management:</a></b></h2>
-                                    <p><a class="btn btn-primary btn-demo" href="{{ url_for('main.about') }}"></i> Find Info</a> <a class="btn btn-primary btn-learn">Learn More</a></p>
-				   				</div>
-				   			</div>
-				   		</div>
-			   		</div>
-			   	</li>
-				<li style="background-image: url({{ url_for('static', filename='images/grape.png') }});">
+			   	    <li style="background-image: url({{ url_for('static', filename='images/firstwall.jpg') }});">
+			   		    <div class="overlay-gradient"></div>
+			   		    <div class="container-fluid">
+			   			    <div class="row">
+				   			    <div class="col-md-7 col-md-offset-3 col-md-pull-3 slider-text">
+				   				    <div class="slider-text-inner">
+                                        <h1 ><b>“Promoting Agribusiness Excellency through Exposure Trips"</b></h1>
+                                        <h2 style="background-color: #C7C7C7"><b>Register for the trip to Argentina <a style="color: #8B008B; background-color: #C7C7C7" href="{{ url_for('main.index') }}" target="_blank">  www.agrib-excellency.com</a></b></h2>
+                                        <p><a class="btn btn-primary btn-demo" href="{{ url_for('main.register') }}"></i>Register for trip</a> <a href="{{ url_for('main.argentina_expo') }}" class="btn btn-primary btn-learn">Learn More</a></p>
+				   				    </div>
+				   			    </div>
+				   		    </div>
+			   		    </div>
+			   	    </li>
+			   	    <li style="background-image: url({{ url_for('static', filename='images/chicks.jpg') }});">
+			   		    <div class="overlay-gradient"></div>
+			   		    <div class="container-fluid">
+			   			    <div class="row">
+				   			    <div class="col-md-6 col-md-offset-3 col-md-push-3 slider-text">
+				   				    <div class="slider-text-inner">
+                                        <h1><b>We Assess and project the financial performance of an entity</b></h1>
+                                        <h2 ><b>Through <a style="color: #8B008B;" href="#wrkSection">Financial Analysis and Management:</a></b></h2>
+                                        <p><a class="btn btn-primary btn-demo" href="{{ url_for('main.work') }}"></i> Find Info</a> <a href="#wrkSection" class="btn btn-primary btn-learn">Learn More</a></p>
+				   				    </div>
+				   			    </div>
+				   		    </div>
+			   		    </div>
+			   	    </li>
+				    <li style="background-image: url({{ url_for('static', filename='images/grape.png') }});">
 						<div class="overlay-gradient"></div>
 						<div class="container-fluid">
 							<div class="row">
 								<div class="col-md-6 col-md-offset-3 col-md-push-3 slider-text">
 									<div class="slider-text-inner">
                                         <h1><b>Enabling agribusinesses to access suitable financing instruments to grow their businesses</b></h1>
-                                        <h2><b>We help projects acquire <a style="color: #8B008B; background-color: #A6AA58" href="http://agrib-excellency.com/" target="_blank">Funding and Grants</a></b></h2>
-										<p><a class="btn btn-primary btn-demo" href="{{ url_for('main.contact') }}"></i> Register</a> <a class="btn btn-primary btn-learn">Learn More</a></p>
+                                        <h2><b>We help projects acquire <a style="color: #8B008B; background-color: #A6AA58" href="#wrkSection">Funding and Grants</a></b></h2>
+										<p><a class="btn btn-primary btn-demo" href="{{ url_for('main.register') }}"></i>Register for trip</a> <a href="#wrkSection" class="btn btn-primary btn-learn">Learn More</a></p>
 									</div>
 								</div>
 							</div>
 						</div>
 					</li>
-			   	<li style="background-image: url({{ url_for('static', filename='images/wheat.jpg') }});">
-			   		<div class="overlay-gradient"></div>
-			   		<div class="container-fluids">
-			   			<div class="row">
-				   			<div class="col-md-6 col-md-offset-3 slider-text">
-				   				<div class="slider-text-inner text-center">
-                                    <h1><b>Access to useful and affordable financial products and Benefits</b></h1>
-                                    <h2><b>understand the benefits of : <a style="color: #8B008B; background-color: #BC8125" href="http://agrib-excellency.com/" target="_blank">Financial Inclusion</a></b></h2>
-                                    <p><a class="btn btn-primary btn-demo" href="{{ url_for('main.contact') }}"></i> Register</a> <a class="btn btn-primary btn-learn">Learn More</a></p>
-				   				</div>
-				   			</div>
-				   		</div>
-			   		</div>
-			   	</li>
-			   	<li style="background-image: url({{ url_for('static', filename='images/cottn.jpg') }});">
-			   		<div class="overlay-gradient"></div>
-			   		<div class="container-fluid">
-			   			<div class="row">
-				   			<div class="col-md-6 col-md-offset-3 col-md-push-3 slider-text">
-				   				<div class="slider-text-inner">
-                                    <h1><b>Achieving project goals within the resource envelop available.</b></h1>
-                                    <h2 ><b style="background-color: #C7C7C7"> We <a  style="color: #8B008B;" href="http://agrib-excellency.com/" target="_blank">manage Projects </a>and facilitate them to completion</b></h2>
-                                    <p><a class="btn btn-primary btn-demo" href="#"></i> View Infor</a> <a class="btn btn-primary btn-learn">Learn More</a></p>
-				   				</div>
-				   			</div>
-				   		</div>
-			   		</div>
-			   	</li>
+			   	    <li style="background-image: url({{ url_for('static', filename='images/wheat.jpg') }});">
+			   		    <div class="overlay-gradient"></div>
+			   		    <div class="container-fluids">
+			   			    <div class="row">
+				   			    <div class="col-md-6 col-md-offset-3 slider-text">
+				   				    <div class="slider-text-inner text-center">
+                                        <h1><b>Access to useful and affordable financial products and Benefits</b></h1>
+                                        <h2><b>understand the benefits of : <a style="color: #8B008B; background-color: #BC8125" href="#finincl">Financial Inclusion</a></b></h2>
+                                        <p><a class="btn btn-primary btn-demo" href="{{ url_for('main.register') }}"></i> Register for trip</a> <a href="#finincl" class="btn btn-primary btn-learn">Learn More</a></p>
+				   				    </div>
+				   			    </div>
+				   		    </div>
+			   		    </div>
+			   	    </li>
+			   	    <li style="background-image: url({{ url_for('static', filename='images/cottn.jpg') }});">
+			   		    <div class="overlay-gradient"></div>
+			   		    <div class="container-fluid">
+			   			    <div class="row">
+				   			    <div class="col-md-6 col-md-offset-3 col-md-push-3 slider-text">
+				   				    <div class="slider-text-inner">
+                                        <h1><b>Achieving project goals within the resource envelop available.</b></h1>
+                                        <h2 ><b style="background-color: #C7C7C7"> We <a  style="color: #8B008B;" href="#services">manage Projects </a>and facilitate them to completion</b></h2>
+                                        <p><a class="btn btn-primary btn-demo" href="#services"></i> View Infor</a> <a href="{{ url_for('main.work') }}" class="btn btn-primary btn-learn">Learn More</a></p>
+				   				    </div>
+				   			    </div>
+				   		    </div>
+			   		    </div>
+			   	    </li>
 			  	</ul>
 		  	</div>
 		</aside>
+
         <div id="fh5co-about" class="fh5co-section">
                 <div class="row">
                     <div class="col-md-6 img-wrap animate-box" data-animate-effect="fadeInLeft">
@@ -103,7 +104,11 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
                         <h2>Upcoming Trips</h2>
-                        <p style="font-size: 16px">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                        <p style="font-size: 16px; color: #0b0b0b">
+                            The Argentine Association of Producers in Direct Sowing (Aapresid) in collaboration with
+                            AGRIB Excellency Limited have organised an agricultural study trip entitled; <br/>
+                            <b style="color: #00b050">“Promoting Agribusiness Excellency through an Exposure Trip to Argentina”</b>
+                        </p>
                     </div>
                 </div>
                 <div class="row">
@@ -147,10 +152,12 @@
         </div>
 
 		<div id="fh5co-services">
-            <div class="row animate-box">
+            <div id="services" class="row animate-box">
                 <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-                    <h2>Our Services Include</h2>
-                    <p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+                    <h2>Our Services </h2>
+                    <p style="font-size: 16px; color: #0b0b0b">
+                        We analyse your business needs and provide the necessary tools for success.
+                    </p>
                 </div>
             </div>
 			<div class="row">
@@ -160,9 +167,12 @@
 							<i class="icon-search"></i>
 						</span>
 						<div class="desc">
-							<h3><a href="{{ url_for('main.work_single') }}">AGRICULTURE EXPOSURE STUDY TRIPS</a></h3>
-							<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-                            <p><a href="{{ url_for('main.work_single') }}">Learn More</a></p>
+							<h3><a href="###">AGRICULTURE EXPOSURE STUDY TRIPS</a></h3>
+							<p style="color: #0b0b0b">Together with our partners, organise agricultural study trips and
+                                Mega Expos in Countries with Advanced Agricultural innovations, and sustainable
+                                production systems that provide learning experiences for future projects.
+                            </p>
+                            <p><a href="###">Learn More</a></p>
 						</div>
 					</div>
 				</div>
@@ -172,10 +182,12 @@
 							<i class="icon-wallet"></i>
 						</span>
                         <div class="desc">
-                            <h3><a href="{{ url_for('main.work_single') }}">FUND MANAGEMENT</a></h3>
-                            <p style="color: #0b0b0b">We oversee and manage the institution’s cash flows to ensure sufficient liquidity at any
-                                point in time to run the institution and to invest any likely idle funds at a profit margin.
-                            <p><a href="{{ url_for('main.work_single') }}">Learn More</a></p>
+                            <h3><a href="###">FUND MANAGEMENT</a></h3>
+                            <p style="color: #0b0b0b">We oversee and manage the institution’s cash flows to ensure
+                                sufficient liquidity at any point in time to run the institution and to invest any
+                                likely idle funds at a profit margin.
+                            </p>
+                            <p><a href="###">Learn More</a></p>
                         </div>
                     </div>
                 </div>
@@ -185,10 +197,10 @@
 							<i class="icon-hotairballoon"></i>
 						</span>
 						<div class="desc">
-							<h3><a href="#">PROJECT MANAGEMENT</a></h3>
+							<h3><a href="###">PROJECT MANAGEMENT</a></h3>
 							<p style="color: #0b0b0b">Support organizations with initiating, planning, executing and monitoring performance of
                                 the organizations’ activities to achieve their set goals within the set timeframe.
-                            <p><a href="{{ url_for('main.work_single') }}">Learn More</a></p>
+                            <p><a href="###">Learn More</a></p>
 						</div>
 					</div>
 				</div>
@@ -199,12 +211,12 @@
 			<div class="row animate-box">
 				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
 					<h2>We also Provide Consultancy and Training Facilitation in:</h2>
-					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+                    <p><b style="color: #0b0b0b">Register for the Annual Mega Agribusiness Expo : <a href="{{ url_for('main.register') }}">Here</a></b></p>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-4 text-center animate-box">
-					<a href="{{ url_for('main.work_single') }}" class="work"  style="background-image: url({{ url_for('static', filename='images/agriculturalFinancing.jpg') }});">
+					<a href="###" class="work"  style="background-image: url({{ url_for('static', filename='images/agriculturalFinancing.jpg') }});">
 						<div class="desc">
                             <h3><b>AGRICULTURAL FINANCING</b></h3>
 							<span style="color: #0b0b0b; font-size: 15px">
@@ -218,7 +230,7 @@
                     <h5><b>AGRICULTURAL FINANCING</b></h5>
 				</div>
 				<div class="col-md-4 text-center animate-box">
-					<a href="{{ url_for('main.work_single') }}" class="work" style="background-image: url({{ url_for('static', filename='images/grantMGT.jpg') }});">
+					<a href="###" class="work" style="background-image: url({{ url_for('static', filename='images/grantMGT.jpg') }});">
 						<div class="desc">
                             <h3><b>GRANT MANAGEMENT</b></h3>
 							<span style="color: #0b0b0b; font-size: 15px">
@@ -229,8 +241,8 @@
 					</a>
                     <h5><b>GRANT MANAGEMENT</b></h5>
 				</div>
-				<div class="col-md-4 text-center animate-box">
-					<a href="{{ url_for('main.work_single') }}" class="work" style="background-image: url({{ url_for('static', filename='images/stockMakt.jpg') }});">
+				<div id="wrkSection" class="col-md-4 text-center animate-box">
+					<a href="###" class="work" style="background-image: url({{ url_for('static', filename='images/stockMakt.jpg') }});">
 						<div class="desc">
                             <h5><b>FINANCIAL ANALYSIS & MGT</b></h5>
 							<span style="color: #0b0b0b; font-size: 15px">
@@ -244,7 +256,7 @@
 			</div>
             <div class="row">
                 <div class="col-md-4 text-center animate-box">
-                    <a href="{{ url_for('main.work_single') }}" class="work"  style="background-image: url({{ url_for('static', filename='images/creditAnalysis.jpg') }});">
+                    <a href="###" class="work"  style="background-image: url({{ url_for('static', filename='images/creditAnalysis.jpg') }});">
                         <div class="desc">
                             <h3><b>CREDIT ANALYSIS & MGT</b></h3>
                             <span style="color: #0b0b0b; font-size: 15px">
@@ -256,7 +268,7 @@
                     <h5><b>CREDIT ANALYSIS & MGT</b></h5>
                 </div>
                 <div class="col-md-4 text-center animate-box">
-                    <a href="{{ url_for('main.work_single') }}" class="work" style="background-image: url({{ url_for('static', filename='images/loans.jpg') }});">
+                    <a href="###" class="work" style="background-image: url({{ url_for('static', filename='images/loans.jpg') }});">
                         <div class="desc">
                             <h3><b>AGRIC LOANS GUARANTEE SCHEMES</b></h3>
                             <span>Brading</span>
@@ -264,8 +276,8 @@
                     </a>
                     <h5><b>AGRIC LOANS GUARANTEE SCHEMES</b></h5>
                 </div>
-                <div class="col-md-4 text-center animate-box">
-                    <a href="{{ url_for('main.work_single') }}" class="work" style="background-image: url({{ url_for('static', filename='images/financialInclusion.jpg') }});">
+                <div id="finincl" class="col-md-4 text-center animate-box">
+                    <a href="###" class="work" style="background-image: url({{ url_for('static', filename='images/financialInclusion.jpg') }});">
                         <div class="desc">
                             <h3><b>FINANCIAL INCLUSION</b></h3>
                             <span style="color: #0b0b0b; font-size: 15px">
@@ -282,8 +294,7 @@
 		<div id="fh5co-counter" class="fh5co-counters">
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3 text-center animate-box">
-					<p>We have a fun facts far far away, behind the word mountains, far from the countries Vokalia and
-                        Consonantia, there live the blind texts.</p>
+					<p>We have worked on multiple Agricultural Projects and realized success with our clients</p>
 					</div>
 			</div>
 			<div class="row animate-box">
