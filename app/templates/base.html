@@ -60,25 +60,25 @@
 						            <div id="fh5co-logo"><a href="{{ url_for('main.index') }}">Agrib-Excellency</a></div>
 					            </div>
 					            <div class="col-xs-7 text-right menu-1">
-						            <ul>
-							            <li class="active"><a href="{{ url_for('main.index') }}">Home</a></li>
-							            <li class="has-dropdown">
+						            <ul id="change">
+							            <li class="{{ indx }}"><a href="{{ url_for('main.index') }}">Home</a></li>
+							            <li class="has-dropdown {{ wrk }}">
 								            <a href="{{ url_for('main.work') }}">Services</a>
 								            <ul class="dropdown">
-                                                <li><a href="#">Exposure Study Trips</a></li>
-									            <li><a href="#">Fund Management</a></li>
-									            <li><a href="#">Project Management</a></li>
-									            <li><a href="#">Agriculture Financing</a></li>
-									            <li><a href="#">Grant Management</a></li>
-									            <li><a href="#">Financial Analysis</a></li>
-									            <li><a href="#">Credit Analysis</a></li>
-                                                <li><a href="#">Loan Schemes</a></li>
-                                                <li><a href="#">FinancialInclusion</a></li>
+                                                <li><a href="{{ url_for('main.work') }}#wrkSection">Exposure Study Trips</a></li>
+									            <li><a href="{{ url_for('main.work') }}#wrkSection">Fund Management</a></li>
+									            <li><a href="{{ url_for('main.work') }}#wrkSection">Project Management</a></li>
+									            <li><a href="{{ url_for('main.work') }}#wrkSection">Agriculture Financing</a></li>
+									            <li><a href="{{ url_for('main.work') }}#wrkSection">Grant Management</a></li>
+									            <li><a href="{{ url_for('main.work') }}#wrkSection">Financial Analysis</a></li>
+									            <li><a href="{{ url_for('main.work') }}#wrkSection">Credit Analysis</a></li>
+                                                <li><a href="{{ url_for('main.work') }}#wrkSection">Loan Schemes</a></li>
+                                                <li><a href="{{ url_for('main.work') }}#wrkSection">FinancialInclusion</a></li>
 								            </ul>
 							            </li>
-                                         <li><a href="{{ url_for('main.about') }}">About Us</a></li>
-							            <li><a href="{{ url_for('main.contact') }}">Contact</a></li>
-{#                                        <li><a href="{{ url_for('main.blog') }}">Blog</a></li>#}
+                                         <li class="{{ abt }}"><a href="{{ url_for('main.about') }}">About Us</a></li>
+							            <li class="{{ cont }}"><a href="{{ url_for('main.contact') }}">Contact</a></li>
+{#                                        <li class="{{ blg }}"><a href="{{ url_for('main.blog') }}">Blog</a></li>#}
 						            </ul>
 					            </div>
 				            </div>
