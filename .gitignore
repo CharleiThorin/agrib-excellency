@@ -3,3 +3,9 @@ __pycache__
 app/static/css/style.css
 app/static/css/style.css.map
 app/static/sass/.sass-cache/
+app/static/sass/bootstrap/
+app/static/sass/_bootstrap-compass.scss
+app/static/sass/_bootstrap-mincer.scss
+app/static/sass/_bootstrap-sprockets.scss
+app/static/sass/bootstrap.scss
+app/static/sass/style.scss
