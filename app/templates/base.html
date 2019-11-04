@@ -57,10 +57,10 @@
 		            <div class="container-wrap">
 			            <div class="top-menu">
 				            <div class="row">
-					            <div class="col-xs-5">
+					            <div class="col-xs-4">
 						            <div id="fh5co-logo"><a href="{{ url_for('main.index') }}">Agrib-Excellency</a></div>
 					            </div>
-					            <div class="col-xs-7 text-right menu-1">
+					            <div class="col-xs-6 text-right menu-1">
 						            <ul id="change">
 							            <li class="{{ indx }}"><a href="{{ url_for('main.index') }}">Home</a></li>
 							            <li class="has-dropdown {{ wrk }}">
@@ -77,10 +77,13 @@
                                                 <li><a href="{{ url_for('main.work') }}#wrkSection">FinancialInclusion</a></li>
 								            </ul>
 							            </li>
-                                         <li class="{{ abt }}"><a href="{{ url_for('main.about') }}">About Us</a></li>
+                                        <li class="{{ abt }}"><a href="{{ url_for('main.about') }}">About Us</a></li>
 							            <li class="{{ cont }}"><a href="{{ url_for('main.contact') }}">Contact</a></li>
 {#                                        <li class="{{ blg }}"><a href="{{ url_for('main.blog') }}">Blog</a></li>#}
-						            </ul>
+                                    </ul>
+					            </div>
+                                 <div class="col-xs-2">
+						           <a class="btn btn-primary btn-sm" href="{{ url_for('main.argentina_expo') }}"></i><b style="color: white">Argentina Expo</b></a>
 					            </div>
 				            </div>
 			            </div>
