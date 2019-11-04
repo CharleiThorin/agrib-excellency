@@ -623,7 +623,9 @@ h1, h2, h3, h4, h5, h6, figure {
           transform: translate3d(0, 0, 0); }
         .work .desc span {
           -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0); } }
+          transform: translate3d(0, 0, 0);
+          font-weight: bold;
+          background: white; } }
   .work:hover .desc {
     opacity: 1; }
     .work:hover .desc h3 {

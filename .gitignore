@@ -1,2 +1,5 @@
 .idea
 __pycache__
+app/static/css/style.css
+app/static/css/style.css.map
+app/static/sass/.sass-cache/
