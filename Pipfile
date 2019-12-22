@@ -8,7 +8,6 @@ flask = "*"
 flask-mail = "*"
 flask-wtf = "*"
 gunicorn = "*"
-waitress = "*"
 
 [dev-packages]
 
